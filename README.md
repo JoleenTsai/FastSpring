@@ -1,4 +1,3 @@
-
 <img style="width: 50%; margin-left: 25%;" src="./src/assets/img/" alt="Logo">
 
 _FastSpring Demo Site website & build tools_ 

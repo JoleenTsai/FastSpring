@@ -1,10 +1,163 @@
+//API CODEE
+// New API access information. Please keep in a secure location. It will not be accessible after your next login.
+
+// Username: ZP8DJXXBRKWVEDEGENZQ_Q
+// Password: aH5Y5vXMQJqL7G3iDFoPRw
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .primary-button {
-    height: 35px;
+    height: 30px;
     border-radius: 12px;
-    background-color: rgb(250, 189, 58);
+    background-color: rgb(58, 221, 250);
     color: white;
     padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.btn-info {
+    margin: 20px;
+    color: white;
+}
+//VIDEO HEADER
+.header-container {
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    border-left: none;
+    border-right: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+video {
+    z-index: -1;
+    opacity: 0.8;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+.mission-statement {
+    display: block;
+    height: 80vh;
+    z-index: 1;
+    li {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 60px;
+}
+    h1 {
+        color: white;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+
+  @media (min-width: 576px) {
+    .header-container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .header-container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .header-container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .header-container {
+      max-width: 1140px;
+    }
+  }
+
+  //NAVBAR
+  nav {
+    z-index: 1;
+    opacity: .8;
+}
+//SECTIONS
+.sections {
+    padding: 2rem 0;
+    overflow: hidden;
+    background-color: white;
+
+   h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: rgb(92, 194, 194);
+    padding: 20px;
+  }
+}
+  @media (min-width: 768px) {
+    section {
+      padding: 6rem 0;
+    }
+  }
+.box {
+    margin: -16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    >* {
+        padding: 16px;
+    }
+}
+.scroll-padding {
+    padding-top: 38px;
+    margin-top: -38px;
+}
+
+//SPINNER
+#fsb *,
+#fsb ::after,
+#fsb ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body.fsb-modalOpen {
+  overflow: hidden; }
+
+#fastspring_spinner
+{
+	width: 100%;
+	height: 100%;
+	z-index: 99999998;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#fastspring_spinner img
+{
+	-webkit-animation-duration: .4s;
+	animation-duration: .4s;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+	-webkit-animation-name: fsb-fadeIn;
+	animation-name: fsb-fadeIn;
+	position: fixed;
+	top: 50%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 99999999;
+}
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Welcome to Rock Paper Scissors!</h1>
+   <h3>Please press r, p, or s on your keyboard to play</h3> 
+   <div id="choice"></div>
+
+<script>
+    let compScore = 0
+    let yourScore = 0
+document.onkeypress = function(event){
+    let gameChoice = ['r', 'p', 's']
+    let compChoice = gameChoice[Math.floor(Math.random() * gameChoice.length)]
+    let yourChoice = event.key
+    
+    
+console.log(compGuess)
+console.log(yourChoice)
+
+
+    if (compGuess ==== 'r' && yourChoice === 'p') {
+    document.querySelector('#choice').innerHTML = `You win!`
+    yourScore++
+    document.querySelect('#choice').innerHTML = `
+    Computer Score: ${compScore}
+    Your Score: ${yourScore}
+    `;
+} else if (compGuess = 'p' && yourChoice = 's') {
+        document.querySelector('#choice').innerHTML = `You win!`
+    yourScore++
+    document.querySelect('#choice').innerHTML = `
+    Computer Score: ${compScore}
+    Your Score: ${yourScore}
+    `;
+    } else if (compGuess ='s' && yourChoice ='r') {
+        document.querySelector('#choice').innerHTML = `You win!`
+    yourScore++
+    document.querySelect('#choice').innerHTML = `
+    Computer Score: ${compScore}
+    Your Score: ${yourScore}
+    `; 
+} else {
+    document.querySelector('#choice').innerHTML = `You lose!`
+compScore++
+    document.querySelect('#choice').innerHTML = `
+    Computer Score: ${compScore}
+    Your Score: ${yourScore}
+    `
+}
+
+</script>
+
+</body>
+</html>

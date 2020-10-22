@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- title -->
-    <title>All Teeth Matter, Co.</title>
+    <title>reSTARTaurant</title>
     <meta property="og:title" content="FastSpring Storefront">
     <meta name="apple-mobile-web-app-title" content="FastSpring Storefront">
 
@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
 
     <!-- image -->
-    <meta property="og:image" content="https://www.fastspringstorefront.com/assets/img/logo1200x630.png">
+    <meta property="og:image" content="./assets/img/logo.png">
     <meta property="og:image:alt" content="FastSpring Storefront Logo" />
 
     <!-- theme -->
@@ -28,127 +28,187 @@
     <meta name="theme-color" content="#6797AA">
 
     <!-- icons -->
-    <link rel="icon" sizes="192x192" href="./assets/img/logo192x192.png">
-    <link rel="apple-touch-icon" href="./assets/img/logo192x192.png">
-    <meta name="msapplication-square310x310logo" content="./assets/img/logo310x310.png">
+    <link rel="icon" sizes="192x192" href="./assets/img/logo.png">
+    <link rel="apple-touch-icon" href="./assets/img/logo.png">
+    <meta name="msapplication-square310x310logo" content="./assets/img/logo.png">
 
     <!-- links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        id = "fsc-api"
+        src = "https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
+        type = "text/javascript" data-storefront="interviewexample.test.onfastspring.com/popup-interviewexample" >
+    </script>
 </head>
 
 <body>
     <header>
-        <!-- <div class="jumbotron jumbotron-fluid" style="background: url(./assets/img/header.jpg) no-repeat center; background-size: cover; height: 60vh;"> -->
-        <div class="jumbotron jumbotron-fluid" style="background-color: white;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="./assets/img/fastspring-logo.png" alt="Logo">
-                        <h1 class="display-4" style="text-align: center;">Sell Products Online</h1>
-                        <p class="lead" style="text-align: center;">Any Currency. Any Client.</p>
-                        <a href="#products"><button class="primary-button">Shop Products</button></a>
-                    </div>
-                    <div class="col">
-                        <img src="./assets/img/fastspring-branded-checkout.png" alt="fastspring-branded-checkout" style="display: flex; justify-content: center; margin-left: auto; margin-right: auto; width: 30vw;">
-                    </div>
-                </div>
+        <div class="header-container">
+            <div class="video-container">
+                <video preload="true" autoplay="autoplay" muted poster="./assets/img/plum-store-bundle-hero-4.png" loop
+                    id="headerVideo" style="width: 100%;">
+                    <source src="assets/video/header.mp4" type="video/mp4">
+                </video>
             </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <img src="./assets/img/logo.png" width="100" alt="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://interviewexample.test.onfastspring.com/">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mission-statement">
+            <ul>
+                <li>
+                    <h1 class="display-4" style="text-align: center;">Start Your Restaurant Today!</h1>
+                </li>
+                <a href="https://interviewexample.test.onfastspring.com/"><button class="primary-button"
+                        style="margin-left: auto; margin-right: auto; display: flex; justify-content: center;">Shop
+                        Products</button></a>
+            </ul>
         </div>
     </header>
 
+
     <main>
+        <div class="row">
+            <section aria-labelledby="h-services" class="sections col scroll-padding">
+                <h2 id="h-services">Main Products</h2>
+                <div class="box">
+                    <div class="container row" id="products">
+                        <div class="card-columns">
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/img/plum-store-bundle-hero-4.png"
+                                    alt="POS Starter Bundle">
+                                <div class="card-body">
+                                    <h5 class="card-title">POS Starter Bundle</h5>
+                                    <p class="card-text">16" Touchscreen, Printer Receipt, and Switch</p>
+                                    <select id="qty">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <button data-fsc-item-path-value='pos-starter-bundle' data-fsc-action="Add, Checkout" >
+                                        <a>Add to Cart</a>
+                                    </button>
 
-        <div class="container" id="products">
-            <div class="card-columns">
-                <div class="card">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title that wraps to a new line</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/img/Altametrics Inventory - Tablet.png"
+                                    alt="Inventory">
+                                <div class="card-body">
+                                    <h5 class="card-title">Inventory Management Software</h5>
+                                    <p class="card-text">Manage your food inventory costs and purchase orders easily and
+                                        efficiently
+                                        with our Inventory Software. Start seeing your profits grow with our accurate
+                                        forecasting
+                                        analysis and variance reporting.</p>
+                                    <a class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/img/Altametrics Schedules 2.png"
+                                    style="height: 60%; width: 60%; margin-left: auto; margin-right: auto;" alt="Labor">
+                                <div class="card-body">
+                                    <h5 class="card-title">Labor Scheduling Software</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <img class="card-img-top" src="./assets/img/Altametrics Clock.png" alt="Clock">
+                                <div class="card-body">
+                                    <h5 class="card-title">Timeclock</h5>
+                                    <p class="card-text">Using gamification techniques, this biometrics timeclock is
+                                        proven to enforce labor law compliance and prevents time theft at your
+                                        restaurant.</p>
+                                    <a href="#" class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title that wraps to a new line</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                            consectetur sit ipsam et nesciunt odio, inventore ex corrupti, odit nobis nisi accusantium
-                            ut dolores cum illum dolorem culpa quam voluptas?Cupiditate non delectus libero, ab
-                            excepturi reiciendis itaque temporibus, facere explicabo provident distinctio cumque? Ab
-                            iure at obcaecati debitis, similique nemo vero commodi sapiente ullam tempore architecto
-                            libero in id!</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card text-center p-3">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card ">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa
-                            distinctio ipsum et perferendis perspiciatis! Eaque at, eum dolore, rerum culpa
-                            accusantium incidunt deserunt officiis quae obcaecati suscipit, ex maxime?</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card p-3 text-right">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px160/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-
+            </section>
+        </div>
+        <div class="row">
+            <section aria-labelledby="h-services" class="sections col scroll-padding">
+                <h2 id="h-services">Add Ons</h2>
+                <div class="box">
+                    <div class="container row">
+                        <div class="card-columns">
+                            <div class="card ">
+                                <img class="card-img-top" src="./assets/img/plum-pos-terminal.png" alt="POS-Terminal">
+                                <div class="card-body">
+                                    <h5 class="card-title">POS Terminal</h5>
+                                    <p class="card-text">16" Touchscreen featuring conversational ordering, built in
+                                        loyalty program, and easy to use interface.</p>
+                                    <a href="#" class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="./assets/img/printer.png" alt="printer">
+                                <div class="card-body">
+                                    <h5 class="card-title">Receipt printer</h5>
+                                    <p class="card-text">Uses thermal paper.</p>
+                                    <a href="#" class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="card p-3 text-right">
+                                <img class="card-img-top" src="./assets/img/Switch.png" alt="Switch">
+                                <div class="card-body">
+                                    <h5 class="card-title">Switch</h5>
+                                    <p class="card-text">Connects receipt printer and POS terminal.</p>
+                                    <a href="#" class="btn btn-info">Add to Cart</a>
+                                </div>
+                            </div>
+            </section>
     </main>
-    <footer class="alt-section">
-        <div class="container" style="text-align: center;"> © 2020</div>
+    <footer class="section">
+        <section aria-labelledby="h-services" class="sections col">
+            <div class="container box" style="text-align: center;">
+                <nav class="row" aria-label="website">
 
+                    <ul class="box" role="menu" aria-label="main" style="margin-left: auto; margin-right: auto;">
+                        <li><a role="menuitem" href="./">Home</a></li> |
+                        <li>
+                            <a role="menuitem" href="https://interviewexample.test.onfastspring.com/">Products</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                © 2020
     </footer>
+    <script
+	id="fsc-api"
+	src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
+	type="text/javascript"
+	data-storefront="interviewexample.test.onfastspring.com/popup-cart"
+    data-continuous="true">
+</script>
+
+<script type="text/javascript">
+	fastspring.builder.add('pos-starter-bundle');
+</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -158,8 +218,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/carousel.js"></script>
+
 </body>
 
 </html>

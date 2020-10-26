@@ -9,49 +9,33 @@
    <h1>Welcome to Rock Paper Scissors!</h1>
    <h3>Please press r, p, or s on your keyboard to play</h3> 
    <div id="choice"></div>
-
+   <script
+   src="https://code.jquery.com/jquery-3.5.1.min.js"
+   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+   crossorigin="anonymous"></script>
 <script>
-    let compScore = 0
-    let yourScore = 0
-document.onkeypress = function(event){
-    let gameChoice = ['r', 'p', 's']
-    let compChoice = gameChoice[Math.floor(Math.random() * gameChoice.length)]
-    let yourChoice = event.key
-    
-    
-console.log(compGuess)
-console.log(yourChoice)
-
-
-    if (compGuess ==== 'r' && yourChoice === 'p') {
-    document.querySelector('#choice').innerHTML = `You win!`
-    yourScore++
-    document.querySelect('#choice').innerHTML = `
-    Computer Score: ${compScore}
-    Your Score: ${yourScore}
-    `;
-} else if (compGuess = 'p' && yourChoice = 's') {
-        document.querySelector('#choice').innerHTML = `You win!`
-    yourScore++
-    document.querySelect('#choice').innerHTML = `
-    Computer Score: ${compScore}
-    Your Score: ${yourScore}
-    `;
-    } else if (compGuess ='s' && yourChoice ='r') {
-        document.querySelector('#choice').innerHTML = `You win!`
-    yourScore++
-    document.querySelect('#choice').innerHTML = `
-    Computer Score: ${compScore}
-    Your Score: ${yourScore}
-    `; 
-} else {
-    document.querySelector('#choice').innerHTML = `You lose!`
-compScore++
-    document.querySelect('#choice').innerHTML = `
-    Computer Score: ${compScore}
-    Your Score: ${yourScore}
-    `
-}
+// fetch('http://api.open-notify.org/astros.json')
+// .then(function(r) {
+// return r.json()
+// })
+// .then(function(data) {
+// data.people.forEach(person => {
+//     console.log(`${person.name}`)
+// });
+// })
+// .catch(function(e) {
+// console.log(e)
+// })
+$.get('http://api.open-notify.org/astros.json')
+.then(function(data) {
+data.people.forEach(person => {
+     console.log(`${person.name}`)
+ });
+console.log(data.people)
+})
+.catch(function(e) {
+console.log(e)
+})
 
 </script>
 

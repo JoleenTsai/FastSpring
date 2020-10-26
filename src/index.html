@@ -37,11 +37,6 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script>
-        id = "fsc-api"
-        src = "https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
-        type = "text/javascript" data-storefront="interviewexample.test.onfastspring.com/popup-interviewexample" >
-    </script>
 </head>
 
 <body>
@@ -95,19 +90,12 @@
                                 <img class="card-img-top" src="./assets/img/plum-store-bundle-hero-4.png"
                                     alt="POS Starter Bundle">
                                 <div class="card-body">
-                                    <h5 class="card-title">POS Starter Bundle</h5>
-                                    <p class="card-text">16" Touchscreen, Printer Receipt, and Switch</p>
-                                    <select id="qty">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                    <button data-fsc-item-path-value='pos-starter-bundle' data-fsc-action="Add, Checkout" >
-                                        <a>Add to Cart</a>
+                                    <h5 class="card-title" data-fsc-item-path="pos-starter-bundle"
+                                        data-fsc-item-display></h5>
+                                    <span data-fsc-item-path="pos-starter-bundle" data-fsc-item-price></span>
+                                    <button data-fsc-item-path="pos-starter-bundle" data-fsc-item-path-value="pos-starter-bundle" data-fsc-action="Add, Checkout">
+                                        <span data-fsc-item-path="pos-starter-bundle" data-fsc-item-description-action></span>
                                     </button>
-
                                 </div>
                             </div>
                             <div class="card">
@@ -198,17 +186,14 @@
                 </nav>
                 © 2020
     </footer>
-    <script
-	id="fsc-api"
-	src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
-	type="text/javascript"
-	data-storefront="interviewexample.test.onfastspring.com/popup-cart"
-    data-continuous="true">
-</script>
+    <script id="fsc-api" src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.3/fastspring-builder.min.js"
+        type="text/javascript" data-storefront="interviewexample.test.onfastspring.com/popup-cart"
+        data-continuous="true">
+        </script>
 
-<script type="text/javascript">
-	fastspring.builder.add('pos-starter-bundle');
-</script>
+    <script type="text/javascript">
+        fastspring.builder.add('pos-starter-bundle');
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
